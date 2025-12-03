@@ -1,0 +1,99 @@
+.menu-showcase {
+    background-color: var(--white);
+    padding-top: 100px;
+    position: relative;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: var(--space-xxl);
+}
+
+.section-title-left {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--space-md);
+    color: var(--text-charcoal);
+}
+
+.section-title-left span {
+    color: var(--accent-gold);
+}
+
+.section-subtitle-left {
+    max-width: 700px;
+    margin: 0 auto var(--space-xl);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xxl);
+}
+
+/* Category Tabs */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xxl);
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    background: transparent;
+    border: 2px solid var(--primary-burgundy);
+    color: var(--primary-burgundy);
+    padding: 0.7rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-body);
+}
+
+.category-tab:hover {
+    background: var(--primary-burgundy);
+    color: var(--white);
+}
+
+.category-tab.active {
+    background: var(--primary-burgundy);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+/* Promo Section - Removed for cleaner design */
+.promo-grid {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: var(--space-lg);
+    }
+
+    .category-tabs {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: var(--space-sm);
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .category-tab {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
