@@ -1,10 +1,6 @@
 import './Hero.css';
 
 const Hero = ({ language }) => {
-    const handleOrderClick = () => {
-        window.open('https://www.gloriafood.com/', '_blank');
-    };
-
     const handleMenuClick = () => {
         const menuSection = document.getElementById('menu');
         if (menuSection) {
@@ -43,9 +39,14 @@ const Hero = ({ language }) => {
                 </p>
 
                 <div className="hero-buttons">
-                    <button className="btn-hero-primary" onClick={handleOrderClick}>
-                        {language === 'ar' ? 'اطلب الآن' : 'Order Now'}
-                    </button>
+                    <span
+                        className="glf-button btn-hero-primary"
+                        data-glf-cuid="8ca97d04-5172-459f-8216-6f926b12fa04"
+                        data-glf-ruid="33eec5bf-0b59-4bf7-bfc0-b8a0057288f5"
+                        style={{ cursor: 'pointer' }}
+                    >
+                        {language === 'ar' ? 'اطلب الآن' : 'See MENU & Order'}
+                    </span>
                     <button className="btn-hero-secondary" onClick={handleMenuClick}>
                         {language === 'ar' ? 'تصفح القائمة' : 'View Menu'}
                     </button>
@@ -58,5 +59,6 @@ const Hero = ({ language }) => {
         </section>
     );
 };
+
 
 export default Hero;
