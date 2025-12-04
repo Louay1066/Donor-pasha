@@ -3,312 +3,325 @@
 
 export const menuData = {
     categories: [
-        { id: 'doner', name: { ar: 'دونير', en: 'Doner' } },
-        { id: 'iraqi', name: { ar: 'عراقي', en: 'Iraqi' } },
-        { id: 'saj', name: { ar: 'صاج', en: 'Saj' } },
-        { id: 'shawarma', name: { ar: 'شاورما', en: 'Shawarma' } },
-        { id: 'jumbo', name: { ar: 'جمبو وميني', en: 'Jumbo & Mini' } },
-        { id: 'pizza', name: { ar: 'بيتزا', en: 'Pizza' } },
-        { id: 'meals', name: { ar: 'وجبات', en: 'Meals' } },
-        { id: 'dips', name: { ar: 'تغميسات', en: 'Dips' } },
-        { id: 'falafel', name: { ar: 'فلافل', en: 'Falafel' } },
-        { id: 'drinks', name: { ar: 'عصائر ومشروبات', en: 'Drinks' } },
-        { id: 'appetizers', name: { ar: 'مقبلات', en: 'Appetizers' } },
+        { id: 'doner', name: { ar: 'دونير', en: 'Doner' }, icon: 'doner' },
+        { id: 'iraqi', name: { ar: 'عراقي', en: 'Iraqi' }, icon: 'iraqi' },
+        { id: 'saj', name: { ar: 'صاج', en: 'Saj' }, icon: 'saj' },
+        { id: 'shawarma', name: { ar: 'الشاورما', en: 'Shawarma' }, icon: 'shawarma' },
+        { id: 'jumbo', name: { ar: 'جمبو', en: 'Jumbo' }, icon: 'jumbo' },
+        { id: 'mini', name: { ar: 'ميني', en: 'Mini' }, icon: 'mini' },
+        { id: 'pizza', name: { ar: 'البيتزا', en: 'Pizza' }, icon: 'pizza' },
+        { id: 'meals', name: { ar: 'الوجبات', en: 'Meals' }, icon: 'meals' },
+        { id: 'dips', name: { ar: 'التغميسات', en: 'Dips' }, icon: 'dips' },
+        { id: 'falafel_doner', name: { ar: 'دونير فلافل', en: 'Falafel Doner' }, icon: 'falafel' },
+        { id: 'falafel_iraqi', name: { ar: 'عراقي فلافل', en: 'Falafel Iraqi' }, icon: 'falafel' },
+        { id: 'falafel_saj', name: { ar: 'صاج الفلافل', en: 'Falafel Saj' }, icon: 'falafel' },
+        { id: 'falafel', name: { ar: 'الفلافل', en: 'Falafel' }, icon: 'falafel' },
+        { id: 'falafel_jumbo', name: { ar: 'جمبو فلافل', en: 'Falafel Jumbo' }, icon: 'falafel' },
+        { id: 'falafel_plates', name: { ar: 'صحون الفلافل', en: 'Falafel Plates' }, icon: 'plate' },
+        { id: 'juices', name: { ar: 'العصائر', en: 'Juices' }, icon: 'juice' },
+        { id: 'soft_drinks', name: { ar: 'المشروبات الغازية', en: 'Soft Drinks' }, icon: 'soda' },
+        { id: 'appetizers', name: { ar: 'المقبلات', en: 'Appetizers' }, icon: 'appetizers' },
+        { id: 'pastries', name: { ar: 'معجناتنا اللذيذة', en: 'Our Delicious Pastries' }, icon: 'pastries' },
+        { id: 'fresh_juices', name: { ar: 'عصيرات طازجة', en: 'Fresh Juices' }, icon: 'fresh_juice' },
+        { id: 'drinks', name: { ar: 'المشروبات', en: 'Drinks' }, icon: 'drinks' },
     ],
 
     products: [
-        // DONER CATEGORY
+        // DONER
         {
-            id: 1,
-            name: { ar: 'دونر دجاج', en: 'Chicken Doner Wrap' },
-            description: { ar: 'طلبة كلاسيكية، خبز صاج، 54 مل صلصة', en: 'Classic Fluffy Shawarma Wrap, month khamii, 54 ml Sauce' },
+            id: 101,
+            name: { ar: 'دونر دجاج', en: 'Chicken Doner' },
+            description: { ar: 'ساندويتش دونر دجاج كلاسيكي', en: 'Classic Chicken Doner Sandwich' },
             category: 'doner',
             price: 25,
-            calories: 350,
+            calories: 400,
             image: 'doner-chicken.jpg'
         },
         {
-            id: 2,
-            name: { ar: 'دونر لحم', en: 'Beef Doner Wrap' },
-            description: { ar: 'طلبة كلاسيكية، خبز صاج، 54 مل صلصة', en: 'Classic Fluffy Shawarma Wrap, month khamii, 54 ml Sauce' },
+            id: 102,
+            name: { ar: 'دونر لحم', en: 'Beef Doner' },
+            description: { ar: 'ساندويتش دونر لحم كلاسيكي', en: 'Classic Beef Doner Sandwich' },
             category: 'doner',
             price: 30,
-            calories: 400,
+            calories: 450,
             image: 'doner-beef.jpg'
         },
-        {
-            id: 3,
-            name: { ar: 'دونر مكسيكي', en: 'Mexican Doner' },
-            description: { ar: 'نكهة مكسيكية حارة مع صاج طازج', en: 'Spicy Mexican flavor with fresh saj' },
-            category: 'doner',
-            price: 28,
-            calories: 380,
-            image: 'doner-mexican.jpg'
-        },
-        {
-            id: 4,
-            name: { ar: 'دونر مكس', en: 'Mix Doner' },
-            description: { ar: 'مزيج من الدجاج واللحم', en: 'Mix of chicken and beef' },
-            category: 'doner',
-            price: 32,
-            calories: 420,
-            image: 'doner-mix.jpg'
-        },
 
-        // IRAQI CATEGORY
+        // IRAQI
         {
-            id: 5,
+            id: 201,
             name: { ar: 'عراقي دجاج', en: 'Iraqi Chicken' },
-            description: { ar: 'على الطريقة العراقية الأصيلة', en: 'Authentic Iraqi style' },
+            description: { ar: 'خبز عراقي مع دجاج', en: 'Iraqi bread with chicken' },
             category: 'iraqi',
-            price: 26,
-            calories: 360,
+            price: 28,
+            calories: 420,
             image: 'iraqi-chicken.jpg'
         },
         {
-            id: 6,
+            id: 202,
             name: { ar: 'عراقي لحم', en: 'Iraqi Beef' },
-            description: { ar: 'لحم طازج على الطريقة العراقية', en: 'Fresh beef Iraqi style' },
+            description: { ar: 'خبز عراقي مع لحم', en: 'Iraqi bread with beef' },
             category: 'iraqi',
-            price: 31,
-            calories: 410,
+            price: 33,
+            calories: 480,
             image: 'iraqi-beef.jpg'
         },
-        {
-            id: 7,
-            name: { ar: 'عراقي مكسيكي', en: 'Iraqi Mexican' },
-            description: { ar: 'مزيج فريد من النكهات', en: 'Unique flavor combination' },
-            category: 'iraqi',
-            price: 29,
-            calories: 390,
-            image: 'iraqi-mexican.jpg'
-        },
 
-        // SAJ CATEGORY
+        // SAJ
         {
-            id: 8,
-            name: { ar: 'صاج دجاج', en: 'Saj Chicken Wrap' },
-            description: { ar: 'طلبة كلاسيكية، خبز صاج، 34 مل صلصة', en: 'Classic Fluffy Shawarma Wrap, month khamii, 34 ml Sauce' },
+            id: 301,
+            name: { ar: 'صاج دجاج', en: 'Saj Chicken' },
+            description: { ar: 'خبز صاج مقرمش مع دجاج', en: 'Crispy saj bread with chicken' },
             category: 'saj',
-            price: 25,
-            calories: 340,
+            price: 26,
+            calories: 380,
             image: 'saj-chicken.jpg'
         },
         {
-            id: 9,
+            id: 302,
             name: { ar: 'صاج لحم', en: 'Saj Beef' },
-            description: { ar: 'لحم صاج طازج', en: 'Fresh beef saj' },
+            description: { ar: 'خبز صاج مقرمش مع لحم', en: 'Crispy saj bread with beef' },
             category: 'saj',
-            price: 30,
-            calories: 390,
+            price: 31,
+            calories: 430,
             image: 'saj-beef.jpg'
         },
-        {
-            id: 10,
-            name: { ar: 'صاج مكسيكي', en: 'Saj Mexican' },
-            description: { ar: 'صاج بنكهة مكسيكية', en: 'Mexican flavored saj' },
-            category: 'saj',
-            price: 27,
-            calories: 370,
-            image: 'saj-mexican.jpg'
-        },
 
-        // SHAWARMA CATEGORY
+        // SHAWARMA
         {
-            id: 11,
-            name: { ar: 'شاورما دجاج', en: 'Chicken Shawarma' },
-            description: { ar: 'شاورما دجاج كلاسيكية', en: 'Classic chicken shawarma' },
+            id: 401,
+            name: { ar: 'شاورما عربي', en: 'Arabic Shawarma' },
+            description: { ar: 'وجبة شاورما عربي مقطعة', en: 'Sliced Arabic Shawarma meal' },
             category: 'shawarma',
-            price: 23,
-            calories: 320,
-            image: 'shawarma-chicken.jpg'
-        },
-        {
-            id: 12,
-            name: { ar: 'شاورما لحم', en: 'Beef Shawarma' },
-            description: { ar: 'شاورما لحم طازجة', en: 'Fresh beef shawarma' },
-            category: 'shawarma',
-            price: 28,
-            calories: 370,
-            image: 'shawarma-beef.jpg'
-        },
-
-        // JUMBO CATEGORY
-        {
-            id: 13,
-            name: { ar: 'جمبو دجاج', en: 'Jumbo Chicken' },
-            description: { ar: 'وجبة جمبو بالدجاج', en: 'Jumbo chicken meal' },
-            category: 'jumbo',
             price: 35,
-            calories: 550,
-            image: 'jumbo-chicken.jpg'
-        },
-        {
-            id: 14,
-            name: { ar: 'ميني دجاج', en: 'Mini Chicken' },
-            description: { ar: 'وجبة صغيرة مثالية', en: 'Perfect small meal' },
-            category: 'jumbo',
-            price: 20,
-            calories: 280,
-            image: 'mini-chicken.jpg'
+            calories: 600,
+            image: 'shawarma-arabic.jpg'
         },
 
-        // PIZZA CATEGORY
+        // JUMBO
         {
-            id: 15,
+            id: 501,
+            name: { ar: 'ساندويتش جمبو', en: 'Jumbo Sandwich' },
+            description: { ar: 'ساندويتش حجم كبير للمشاركة', en: 'Large size sandwich for sharing' },
+            category: 'jumbo',
+            price: 45,
+            calories: 800,
+            image: 'jumbo-sandwich.jpg'
+        },
+
+        // MINI
+        {
+            id: 601,
+            name: { ar: 'ساندويتش ميني', en: 'Mini Sandwich' },
+            description: { ar: 'ساندويتش حجم صغير', en: 'Small size sandwich' },
+            category: 'mini',
+            price: 15,
+            calories: 200,
+            image: 'mini-sandwich.jpg'
+        },
+
+        // PIZZA
+        {
+            id: 701,
+            name: { ar: 'بيتزا مارغريتا', en: 'Margherita Pizza' },
+            description: { ar: 'جبنة وموزاريلا وصلصة طماطم', en: 'Cheese, mozzarella and tomato sauce' },
+            category: 'pizza',
+            price: 35,
+            calories: 700,
+            image: 'pizza-margherita.jpg'
+        },
+        {
+            id: 702,
             name: { ar: 'بيتزا دجاج', en: 'Chicken Pizza' },
-            description: { ar: 'بيتزا طازجة بالدجاج', en: 'Fresh chicken pizza' },
+            description: { ar: 'بيتزا مع قطع الدجاج', en: 'Pizza with chicken pieces' },
             category: 'pizza',
             price: 40,
-            calories: 600,
+            calories: 750,
             image: 'pizza-chicken.jpg'
         },
+
+        // MEALS
         {
-            id: 16,
-            name: { ar: 'بيتزا لحم', en: 'Beef Pizza' },
-            description: { ar: 'بيتزا لذيذة باللحم', en: 'Delicious beef pizza' },
-            category: 'pizza',
+            id: 801,
+            name: { ar: 'وجبة برجر', en: 'Burger Meal' },
+            description: { ar: 'برجر مع بطاطس ومشروب', en: 'Burger with fries and drink' },
+            category: 'meals',
             price: 45,
-            calories: 650,
-            image: 'pizza-beef.jpg'
-        },
-        {
-            id: 17,
-            name: { ar: 'بيتزا مكس', en: 'Mix Pizza' },
-            description: { ar: 'بيتزا متنوعة', en: 'Mixed pizza' },
-            category: 'pizza',
-            price: 48,
-            calories: 680,
-            image: 'pizza-mix.jpg'
+            calories: 900,
+            image: 'meal-burger.jpg'
         },
 
-        // MEALS CATEGORY
+        // DIPS
         {
-            id: 18,
-            name: { ar: 'وجبة عائلية', en: 'Family Meal' },
-            description: { ar: 'وجبة كاملة للعائلة', en: 'Complete family meal' },
-            category: 'meals',
-            price: 120,
-            calories: 2000,
-            image: 'family-meal.jpg'
-        },
-        {
-            id: 19,
-            name: { ar: 'وجبة كيلو', en: 'Kilo Meal' },
-            description: { ar: 'كيلو كامل من اللحم أو الدجاج', en: 'Full kilo of meat or chicken' },
-            category: 'meals',
-            price: 95,
-            calories: 1500,
-            image: 'kilo-meal.jpg'
-        },
-
-        // DIPS CATEGORY
-        {
-            id: 20,
-            name: { ar: 'تغميسة الثوم', en: 'Garlic Sauce' },
-            description: { ar: 'صلصة ثوم طازجة', en: 'Fresh garlic sauce' },
+            id: 901,
+            name: { ar: 'ثومية', en: 'Garlic Dip' },
+            description: { ar: 'صلصة الثوم الكريمية', en: 'Creamy garlic sauce' },
             category: 'dips',
             price: 5,
-            calories: 80,
+            calories: 100,
             image: 'dip-garlic.jpg'
         },
-        {
-            id: 21,
-            name: { ar: 'تغميسة سبايسي', en: 'Spicy Sauce' },
-            description: { ar: 'صلصة حارة', en: 'Spicy hot sauce' },
-            category: 'dips',
-            price: 5,
-            calories: 70,
-            image: 'dip-spicy.jpg'
-        },
-        {
-            id: 22,
-            name: { ar: 'تغميسة الجبن', en: 'Cheese Sauce' },
-            description: { ar: 'صلصة جبن كريمية', en: 'Creamy cheese sauce' },
-            category: 'dips',
-            price: 6,
-            calories: 100,
-            image: 'dip-cheese.jpg'
-        },
-        {
-            id: 23,
-            name: { ar: 'تغميسة أفوكادو', en: 'Avocado Sauce' },
-            description: { ar: 'صلصة أفوكادو طازجة', en: 'Fresh avocado sauce' },
-            category: 'dips',
-            price: 7,
-            calories: 90,
-            image: 'dip-avocado.jpg'
-        },
 
-        // FALAFEL CATEGORY
+        // FALAFEL DONER
         {
-            id: 24,
-            name: { ar: 'فلافل دونر', en: 'Falafel Doner' },
-            description: { ar: 'فلافل بأسلوب الدونر', en: 'Falafel doner style' },
-            category: 'falafel',
-            price: 22,
-            calories: 300,
+            id: 1001,
+            name: { ar: 'دونر فلافل', en: 'Falafel Doner' },
+            description: { ar: 'فلافل بخبز الدونر', en: 'Falafel in doner bread' },
+            category: 'falafel_doner',
+            price: 20,
+            calories: 350,
             image: 'falafel-doner.jpg'
         },
+
+        // FALAFEL IRAQI
         {
-            id: 25,
-            name: { ar: 'صحن فلافل', en: 'Falafel Plate' },
-            description: { ar: 'صحن فلافل كامل', en: 'Complete falafel plate' },
+            id: 1101,
+            name: { ar: 'عراقي فلافل', en: 'Falafel Iraqi' },
+            description: { ar: 'فلافل بخبز عراقي', en: 'Falafel in Iraqi bread' },
+            category: 'falafel_iraqi',
+            price: 22,
+            calories: 370,
+            image: 'falafel-iraqi.jpg'
+        },
+
+        // FALAFEL SAJ
+        {
+            id: 1201,
+            name: { ar: 'صاج فلافل', en: 'Falafel Saj' },
+            description: { ar: 'فلافل بخبز الصاج', en: 'Falafel in saj bread' },
+            category: 'falafel_saj',
+            price: 20,
+            calories: 340,
+            image: 'falafel-saj.jpg'
+        },
+
+        // FALAFEL
+        {
+            id: 1301,
+            name: { ar: 'ساندويتش فلافل', en: 'Falafel Sandwich' },
+            description: { ar: 'ساندويتش فلافل تقليدي', en: 'Traditional falafel sandwich' },
             category: 'falafel',
+            price: 18,
+            calories: 320,
+            image: 'falafel-sandwich.jpg'
+        },
+
+        // FALAFEL JUMBO
+        {
+            id: 1401,
+            name: { ar: 'جمبو فلافل', en: 'Jumbo Falafel' },
+            description: { ar: 'ساندويتش فلافل حجم كبير', en: 'Large falafel sandwich' },
+            category: 'falafel_jumbo',
+            price: 30,
+            calories: 500,
+            image: 'falafel-jumbo.jpg'
+        },
+
+        // FALAFEL PLATES
+        {
+            id: 1501,
+            name: { ar: 'صحن فلافل مشكل', en: 'Mixed Falafel Plate' },
+            description: { ar: 'فلافل مع خضروات وطحينة', en: 'Falafel with vegetables and tahini' },
+            category: 'falafel_plates',
             price: 25,
-            calories: 350,
+            calories: 400,
             image: 'falafel-plate.jpg'
         },
 
-        // DRINKS CATEGORY
+        // JUICES
         {
-            id: 26,
-            name: { ar: 'عصير برتقال طازج', en: 'Fresh Orange Juice' },
-            description: { ar: 'عصير برتقال طبيعي 100%', en: '100% natural orange juice' },
-            category: 'drinks',
-            price: 12,
+            id: 1601,
+            name: { ar: 'عصير برتقال', en: 'Orange Juice' },
+            description: { ar: 'عصير برتقال طبيعي', en: 'Natural orange juice' },
+            category: 'juices',
+            price: 15,
             calories: 120,
             image: 'juice-orange.jpg'
         },
+
+        // SOFT DRINKS
         {
-            id: 27,
-            name: { ar: 'كوكاكولا', en: 'Coca Cola' },
-            description: { ar: 'مشروب غازي', en: 'Soft drink' },
-            category: 'drinks',
+            id: 1701,
+            name: { ar: 'بيبسي', en: 'Pepsi' },
+            description: { ar: 'مشروب غازي بارد', en: 'Cold soft drink' },
+            category: 'soft_drinks',
             price: 5,
             calories: 140,
-            image: 'drink-cola.jpg'
-        },
-        {
-            id: 28,
-            name: { ar: 'ماء', en: 'Water' },
-            description: { ar: 'ماء معدني', en: 'Mineral water' },
-            category: 'drinks',
-            price: 3,
-            calories: 0,
-            image: 'drink-water.jpg'
+            image: 'drink-pepsi.jpg'
         },
 
-        // APPETIZERS CATEGORY
+        // APPETIZERS
         {
-            id: 29,
-            name: { ar: 'حمص', en: 'Hummus' },
-            description: { ar: 'حمص طازج مع زيت الزيتون', en: 'Fresh hummus with olive oil' },
+            id: 1801,
+            name: { ar: 'بطاطس مقلية', en: 'French Fries' },
+            description: { ar: 'بطاطس مقلية مقرمشة', en: 'Crispy french fries' },
             category: 'appetizers',
-            price: 15,
-            calories: 200,
-            image: 'appetizer-hummus.jpg'
+            price: 12,
+            calories: 300,
+            image: 'fries.jpg'
         },
         {
-            id: 30,
-            name: { ar: 'بطاطس مقلية', en: 'French Fries' },
-            description: { ar: 'بطاطس ذهبية مقرمشة', en: 'Golden crispy fries' },
+            id: 1802,
+            name: { ar: 'كبة', en: 'Kibbeh' },
+            description: { ar: 'كبة مقلية (3 قطع)', en: 'Fried Kibbeh (3 pcs)' },
             category: 'appetizers',
-            price: 10,
+            price: 18,
+            calories: 250,
+            image: 'kibbeh.jpg'
+        },
+
+        // PASTRIES
+        {
+            id: 1901,
+            name: { ar: 'فطيرة جبن', en: 'Cheese Pie' },
+            description: { ar: 'فطيرة محشوة بالجبن', en: 'Pie stuffed with cheese' },
+            category: 'pastries',
+            price: 15,
+            calories: 350,
+            image: 'pie-cheese.jpg'
+        },
+        {
+            id: 1902,
+            name: { ar: 'فطيرة سبانخ', en: 'Spinach Pie' },
+            description: { ar: 'فطيرة محشوة بالسبانخ', en: 'Pie stuffed with spinach' },
+            category: 'pastries',
+            price: 15,
             calories: 300,
-            image: 'appetizer-fries.jpg'
+            image: 'pie-spinach.jpg'
+        },
+
+        // FRESH JUICES
+        {
+            id: 2001,
+            name: { ar: 'عصير ليمون نعناع', en: 'Lemon Mint Juice' },
+            description: { ar: 'عصير منعش', en: 'Refreshing juice' },
+            category: 'fresh_juices',
+            price: 18,
+            calories: 100,
+            image: 'juice-lemon-mint.jpg'
+        },
+
+        // DRINKS (General/Hot)
+        {
+            id: 2101,
+            name: { ar: 'شاي', en: 'Tea' },
+            description: { ar: 'شاي أحمر ساخن', en: 'Hot red tea' },
+            category: 'drinks',
+            price: 3,
+            calories: 5,
+            image: 'tea.jpg'
+        },
+        {
+            id: 2102,
+            name: { ar: 'قهوة تركية', en: 'Turkish Coffee' },
+            description: { ar: 'قهوة تركية أصيلة', en: 'Authentic Turkish coffee' },
+            category: 'drinks',
+            price: 10,
+            calories: 10,
+            image: 'coffee-turkish.jpg'
         },
     ]
 };
 
 export default menuData;
+
