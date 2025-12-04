@@ -1,4 +1,5 @@
 .hero {
+    padding-top: 70px;
     position: relative;
     min-height: 90vh;
     display: flex;
@@ -164,7 +165,7 @@
 /* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;

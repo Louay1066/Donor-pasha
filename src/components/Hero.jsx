@@ -13,9 +13,7 @@ const Hero = ({ language }) => {
             <div className="hero-content">
                 <div className="hero-ornament"></div>
 
-                <p className="hero-subtitle-top">
-                    {language === 'ar' ? 'مطعم فاخر' : 'Authentic Turkish Cuisine'}
-                </p>
+
 
                 <h1 className="hero-title">
                     {language === 'ar' ? (
@@ -43,7 +41,6 @@ const Hero = ({ language }) => {
                         className="glf-button btn-hero-primary"
                         data-glf-cuid="8ca97d04-5172-459f-8216-6f926b12fa04"
                         data-glf-ruid="33eec5bf-0b59-4bf7-bfc0-b8a0057288f5"
-                        style={{ cursor: 'pointer' }}
                     >
                         {language === 'ar' ? 'اطلب الآن' : 'See MENU & Order'}
                     </span>

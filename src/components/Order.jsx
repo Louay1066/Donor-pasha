@@ -1,10 +1,6 @@
 import './Order.css';
 
 const Order = ({ language }) => {
-    const handleOrderClick = () => {
-        window.open('https://www.gloriafood.com/', '_blank');
-    };
-
     return (
         <section id="order" className="order-section">
             <div className="container">
@@ -26,24 +22,14 @@ const Order = ({ language }) => {
                         }
                     </p>
 
-                    <div className="order-features">
-                        <div className="order-feature">
-                            <div className="feature-icon-large">🚀</div>
-                            <span>{language === 'ar' ? 'توصيل سريع' : 'Fast Delivery'}</span>
-                        </div>
-                        <div className="order-feature">
-                            <div className="feature-icon-large">🌟</div>
-                            <span>{language === 'ar' ? 'طعام طازج' : 'Fresh Food'}</span>
-                        </div>
-                        <div className="order-feature">
-                            <div className="feature-icon-large">🔒</div>
-                            <span>{language === 'ar' ? 'دفع آمن' : 'Secure Payment'}</span>
-                        </div>
-                    </div>
-
-                    <button className="order-btn" onClick={handleOrderClick}>
-                        {language === 'ar' ? 'اطلب الآن عبر GloriaFood' : 'Order Now via GloriaFood'}
-                    </button>
+                    <span
+                        className="glf-button btn btn-secondary"
+                        data-glf-cuid="8ca97d04-5172-459f-8216-6f926b12fa04"
+                        data-glf-ruid="33eec5bf-0b59-4bf7-bfc0-b8a0057288f5"
+                        style={{ cursor: 'pointer', display: 'inline-block' }}
+                    >
+                        {language === 'ar' ? 'اطلب الآن' : 'Order Now'}
+                    </span>
 
                     <p className="order-note">
                         {language === 'ar'
