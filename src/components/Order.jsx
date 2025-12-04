@@ -22,11 +22,12 @@ const Order = ({ language }) => {
                         }
                     </p>
 
+
                     <span
-                        className="glf-button btn btn-secondary"
+                        className="glf-button btn-reservation"
                         data-glf-cuid="8ca97d04-5172-459f-8216-6f926b12fa04"
                         data-glf-ruid="33eec5bf-0b59-4bf7-bfc0-b8a0057288f5"
-                        style={{ cursor: 'pointer', display: 'inline-block' }}
+                        style={{ display: 'inline-block', width: 'fit-content', borderRadius: '10px' }}
                     >
                         {language === 'ar' ? 'اطلب الآن' : 'Order Now'}
                     </span>

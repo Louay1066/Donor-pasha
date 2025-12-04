@@ -392,3 +392,43 @@ a:hover {
         font-size: 15px;
     }
 }
+
+/* ===================================
+   GLORIAFOOD WIDGET FIXES
+   =================================== */
+
+/* Ensure GloriaFood modal appears above everything */
+.glf-mor-modal,
+.glf-modal,
+#glf-overlay,
+.glf-overlay,
+div[class*="glf-mor"],
+div[class*="glf-modal"] {
+    z-index: 999999 !important;
+}
+
+/* Fix GloriaFood iframe positioning on mobile */
+.glf-mor-modal iframe,
+.glf-modal iframe {
+    max-height: 100vh !important;
+    max-height: 100dvh !important;
+}
+
+/* Ensure close button is visible and accessible */
+.glf-mor-modal .glf-close,
+.glf-modal .glf-close,
+.glf-mor-modal button[class*="close"],
+.glf-modal button[class*="close"],
+.glf-mor-modal [class*="close"],
+.glf-modal [class*="close"] {
+    z-index: 9999999 !important;
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+}
+
+/* Lower navbar z-index when GloriaFood modal is open */
+body:has(.glf-mor-modal) .navbar,
+body:has(.glf-modal) .navbar {
+    z-index: 1 !important;
+}

@@ -115,8 +115,14 @@
     display: flex;
     gap: var(--space-md);
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: var(--space-lg);
+}
+
+.hero-buttons .btn-reservation,
+.hero-buttons .btn-hero-secondary {
+    min-width: 200px;
+    text-align: center;
 }
 
 .btn-hero-primary {
